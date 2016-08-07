@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/demo.js"></script>
+    <style>
+        form{
+            margin: 150px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <IFrame id="i_frame" name="i_frame" width="1px" height="1px" style="display:none" src="index_iframe.html"></IFrame>
+    <form action="../message/index.php" method="post" enctype="multipart/form-data" target="i_frame">
+        <input class="input-text" type="text" name="" id="input_name" value="贵姓 *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+        <input class="input-text" type="text" name="" id="input_email" value="您的邮件 *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+        <textarea class="input-text text-area" cols="0" rows="0" name="" id="input_message" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">您的留言 *</textarea>
+        <input class="input-btn" type="submit" name="" id="input_submit" value="提交/SUBMIT">
+    </form>
+</div>
+</body>
+</html>
